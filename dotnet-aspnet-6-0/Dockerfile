@@ -2,8 +2,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0
 
 LABEL author.name="cmsang" \
     author.email="sangcm.research@gmail.com" \
-    created-date="28/09/2022" \
+    created-date="08/09/2023" \
     base-image="mcr.microsoft.com/dotnet/aspnet:6.0" \
+    dotnet="6.0.21" \
     installed="libgdiplus"
 
 ENV TZ=Asia/Ho_Chi_Minh
