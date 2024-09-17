@@ -1,0 +1,11 @@
+version: '3'
+services:
+  haproxy:
+    image: haproxy:latest
+    container_name: haproxy
+    ports:
+      - "31090:31090" # Mapping the HAProxy port 31090 to the host
+      - "60000-63000:60000-63000"
+    volumes:
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    restart: unless-stopped # Restart policy
